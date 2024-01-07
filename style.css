@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(gambar/giphy.gif);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: background-color 0.5ms ease-in-out;
+}
+img.logo{
+    width: 50px;
+}
+a.link{
+    text-decoration: none;
+    color: white;
+}
+a.link:hover{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 9px;
+}
+nav.scrolled{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+.prolog{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15em;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 1em;
+    border-radius: 9px;
+    flex-wrap: wrap-reverse;
+    backdrop-filter: blur(10px);
+}
+.teks{
+    width: 400px;
+    text-align: justify;
+}
+img.sosmed{
+    width: 30px;
+    margin: 10px;
+}
+img.pp{
+    width: 150px;
+    border-radius: 90%;
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.5em 0 1.5em 5em;
+}
+.progress{
+    width: 10em;
+    padding: 5em;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    border-radius: 9px;
+}
+.order{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5em;
+    align-items: center;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    width: 20em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 9px;
+}
+footer{
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+@media screen and (max-width:780px) {
+    nav{
+        padding: 1.5em;
+    }
+    .prolog{
+        padding: 1em;
+    }
+    .progress{
+        width: 10em;
+        padding: 1em;
+    }
+}
